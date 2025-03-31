@@ -1,14 +1,14 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content:[
+  content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}"
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme:{
-    extend:{
-      colors:{
+  theme: {
+    extend: {
+      colors: {
         "background-primary": "#050505",
         "background-secondary": "#0F0F10",
         "background-tertiary": "#19191A",
@@ -21,7 +21,9 @@ const config: Config = {
         "accent-purple": "#4B2DBB",
         "accent-green": "#87BB2D",
         "accent-pink": "#B5446B"
-      }
-    }
-  }
-}
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
